@@ -1,4 +1,4 @@
 links:
-  # - title: Help
-  #   sup: me
-  #   url: /help/
+  - title: RSS
+    sup: аудио
+    url: /rss.audio.xml
