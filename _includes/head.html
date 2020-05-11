@@ -1,0 +1,25 @@
+<head>
+
+<!-- Base meta -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Seo meta -->
+{% seo %}
+
+<!-- CSS -->
+<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg" href="{{ site.favicon | relative_url }}">
+
+<!-- RSS -->
+<link href="/rss.audio.xml" type="application/rss+xml" rel="alternate" title="{{ site.title }} RSS Audio" />
+
+<!-- Scripts -->
+<script src="/assets/js/audio-player.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="/assets/js/matrix.js" type="text/javascript" charset="utf-8" async defer></script>
+{% include head.scripts.html %}
+
+</head>

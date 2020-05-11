@@ -1,0 +1,9 @@
+<a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+  <div>
+    <h2 class="catalogue-title">{{ post.title }}</h2>
+    <p>{{ post.excerpt }}</p>
+    {% if post.audio_url %}
+      {% include audio-player.html %}
+    {% endif %}
+  </div>
+</a>

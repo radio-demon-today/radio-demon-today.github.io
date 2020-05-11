@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="post">
+  
+  <!-- Title -->
+  <h1 class="post-title">{{ page.title }}</h1>
+  
+  <!-- Content -->
+  {{ content }}
+
+  {% if page.audio_url %}
+    {% include audio-player.html %}
+  {% endif %}
+
+</div>
+
+{% if page.comments %}
+  {% include disqus-comments.html %}
+{% endif %}
+
+{% include post.pagination.html %}

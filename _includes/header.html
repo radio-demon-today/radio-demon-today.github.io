@@ -1,0 +1,14 @@
+<nav class="nav">
+  <div class="nav-container">
+    <a href="{{ site.baseurl }}/"><h2 class="nav-title">{{ site.title }}</h2></a>
+    <ul>
+      {% for category_page in site.category_pages %}
+      <li><a href="{{ category_page.url | prepend: site.baseurl }}">{{ category_page.title }}</a></li>
+      {% endfor %}
+
+      {% for link in site.data.navigation.links %}
+      <li><a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}{% if link.sup %}<sup>{{ link.sup }}</sup>{% endif %}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

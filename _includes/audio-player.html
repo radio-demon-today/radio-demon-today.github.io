@@ -1,0 +1,11 @@
+<div class="audio-player-wrapper">
+    <audio controls style="width: 100%;">
+        {% if page.audio_url %}
+            <source src="{{ page.audio_url }}" type="audio/mpeg">
+        {% endif %}
+        {% if post.audio_url %}
+            <source src="{{ post.audio_url }}" type="audio/mpeg">
+        {% endif %}
+            Your browser does not support the audio element.
+    </audio>
+</div>
