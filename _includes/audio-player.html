@@ -1,5 +1,5 @@
 <div class="audio-player-wrapper">
-    <audio controls style="width: 100%;">
+    <audio preload="none" controls style="width: 100%;">
         {% if page.audio_url %}
             <source src="{{ page.audio_url }}" type="audio/mpeg">
         {% endif %}
