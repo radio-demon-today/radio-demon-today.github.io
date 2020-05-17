@@ -4,6 +4,10 @@
     color: $default-color;
     display: block;
     padding: 1rem 0;
+  
+    p {
+      font-size: 1.3em;
+    }
 
     &:last-child {
       border: 0;
